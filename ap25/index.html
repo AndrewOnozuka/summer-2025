@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{PAGE_TITLE}}</title>
+    <title>AP2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="{{FAVICON_PATH}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,62 +22,66 @@
 
     <!-- Header -->
     <header class="text-center mb-5">
-        <h1 class="text-3xl font-bold text-white">{{HEADER_TITLE}}</h1>
+        <h1 class="text-3xl font-bold text-white">Alpha Project 2025: OOTD</h1>
     </header>
 
     <!-- Schedule Image -->
-    <img src="{{SCHEDULE_IMAGE_PATH}}" alt="schedule" class="w-full max-w-full block mb-5 rounded-md shadow-md">
+    <img src="../pic/ap25_sched.png" alt="schedule" class="w-full max-w-full block mb-5 rounded-md shadow-md">
 
     <!-- 50/50 Equal Height Layout -->
     <div class="flex flex-col md:flex-row items-stretch gap-6">
 
         <!-- Left Section -->
         <div class="w-full md:w-1/2 flex flex-col fixed-height">
-
             <!-- Image -->
             <div class="flex-1 overflow-hidden">
-                <img src="{{LEFT_IMAGE_PATH}}" alt="logo" class="w-full h-full object-contain">
+                <img src="../pic/ootdlogo.jpg" alt="logo" class="w-full h-full object-contain">
             </div>
 
             <!-- Bible Verse -->
             <blockquote class="italic text-lg border-l-4 border-white pl-4 py-4 text-white">
-                <p>{{VERSE_TEXT}}</p>
-                <strong class="block text-right mt-2"><cite>{{VERSE_CITATION}}</cite></strong>
+                <p>If then you have been raised with Christ, seek the things that are above, where Christ is, seated at the right hand of God.
+                Set your minds on things that are above, not on things that are on earth.
+                For you have died, and your life is hidden with Christ in God.
+                When Christ who is your life appears, then you also will appear with him in glory.</p>
+                <strong class="block text-right mt-2"><cite>Colossians 3:1-4</cite></strong>
             </blockquote>
         </div>
 
-        <!-- Right Section -->
-        <div class="w-full md:w-1/2 pl-6 flex items-center fixed-height">
-            <ul class="list-none space-y-2 text-white underline">
-                <li><a href="01.html">AP #1 All of Life Rally | OOTD | Sea Choi</a></li>
-                <li><a href="02.html">AP #2 Devotional Life | OIJA Colossians 3:1-2 | Elsa Kim</a></li>
-                <li><a href="03.html">AP #3 Missional Life | Marking Out Your Story | Anthony Chen</a></li>
-                <li><a href="04.html">AP #4 Communal Life | Making the Most Out of AP | Nate Lightle</a></li>
-                <li><a href="05.html">AP #5 Devotional Life | ACTS | Leilani Obana</a></li>
-                <li><a href="06.html">AP #6 Missional Life | 3 Circles/Defining a Win | Abby Angalet</a></li>
-                <li><a href="07.html">AP #7 Devotional Life | Gospel Waltz | Aaron Truong</a></li>
-                <li><a href="08.html">AP #8 Communal Life | Decommodifying Community | Janie Collins</a></li>
-                <li><a href="09.html">AP #9 Communal Life | Loving Our Neighbors in the LGBTQ Community | Steven Cooper</a></li>
-                <li><a href="10.html">AP #10 Communal Life | Conflict Resolution | Noah Lee</a></li>
-                <li><a href="11.html">AP #11 Men's Time | title | author</a></li>
-                <li><a href="12.html">AP #12 Devotional Life | Practicing the Way: Solitude | Berkeley Gomez</a></li>
-                <li><a href="13.html">AP #13 Leaders Life | Budgeting | Carlos Gomez</a></li>
-                <li><a href="14.html">AP #14 Devotional Life | How to Sabbath | Noah Lee</a></li>
-                <li><a href="15.html">AP #15 NatCon 2026 | Sam Collins & Mike Harpe</a></li>
-                <li><a href="16.html">AP #16 Missional Life | Cultural Apologetics 101 | </a></li>
-                <li><a href="17.html">AP #17 Devotional Life | Prayer | David Jun</a></li>
-                <li><a href="18.html">AP #18 Leaders Life | Navigating Emotions | Cara Comstock</a></li>
-                <li><a href="19.html">AP #19 Leaders Life | Gospel Humility: The Freedom of Self Forgetfulness | Elsa Kim</a></li>
-                <li><a href="20.html">AP #20 All of Life Rally | Kill of Be Killed | Alan Yu</a></li>
-                <li><a href="21.html">AP #21 Leaders Life | How to Lament | Sea Choi</a></li>
-                <li><a href="22.html">AP #22 Communal Life | How to Identity Idols | Sam Collins</a></li>
-                <li><a href="23.html">AP #23 Leaders Life | Accept, Reject, Redeem | Narnia</a></li>
-                <li><a href="24.html">AP #24 Missional Life | title | Pastor Joel Yoon</a></li>
-                <li><a href="25.html">AP #25 Communal Life | title | Pastor Joel Yoon</a></li>
-                <li><a href="26.html">AP #26 Missional Life | Vision/Values of CO | Sam Collins</a></li>
-                <li><a href="27.html">AP #27 Leaders Life | AP Debrief | Alan Yu</a></li>
-                <li><a href="28.html">AP #28 All of Life Rally | TBD | Nate Lightle</a></li>
-            </ul>
+        <!-- Right Section (scrollable only if it overflows on desktop) -->
+        <div class="w-full md:w-1/2 pl-6">
+            <div class="max-h-[800px] overflow-y-auto">
+                <ul class="list-none space-y-2 text-white underline">
+                    <li><a href="01.html">AP #1 All of Life Rally | OOTD | Sea Choi</a></li>
+                    <li><a href="02.html">AP #2 Devotional Life | OIJA Colossians 3:1-2 | Elsa Kim</a></li>
+                    <li><a href="03.html">AP #3 Missional Life | Marking Out Your Story | Anthony Chen</a></li>
+                    <li><a href="04.html">AP #4 Communal Life | Making the Most Out of AP | Nate Lightle</a></li>
+                    <li><a href="05.html">AP #5 Devotional Life | ACTS | Leilani Obana</a></li>
+                    <li><a href="06.html">AP #6 Missional Life | 3 Circles/Defining a Win | Abby Angalet</a></li>
+                    <li><a href="07.html">AP #7 Devotional Life | Gospel Waltz | Aaron Truong</a></li>
+                    <li><a href="08.html">AP #8 Communal Life | Decommodifying Community | Janie Collins</a></li>
+                    <li><a href="09.html">AP #9 Communal Life | Loving Our Neighbors in the LGBTQ Community | Steven Cooper</a></li>
+                    <li><a href="10.html">AP #10 Communal Life | Conflict Resolution | Noah Lee</a></li>
+                    <li><a href="11.html">AP #11 Men's Time | title | author</a></li>
+                    <li><a href="12.html">AP #12 Devotional Life | Practicing the Way: Solitude | Berkeley Gomez</a></li>
+                    <li><a href="13.html">AP #13 Leaders Life | Budgeting | Carlos Gomez</a></li>
+                    <li><a href="14.html">AP #14 Devotional Life | How to Sabbath | Noah Lee</a></li>
+                    <li><a href="15.html">AP #15 NatCon 2026 | Sam Collins & Mike Harpe</a></li>
+                    <li><a href="16.html">AP #16 Missional Life | Cultural Apologetics 101 | </a></li>
+                    <li><a href="17.html">AP #17 Devotional Life | Prayer | David Jun</a></li>
+                    <li><a href="18.html">AP #18 Leaders Life | Navigating Emotions | Cara Comstock</a></li>
+                    <li><a href="19.html">AP #19 Leaders Life | Gospel Humility: The Freedom of Self Forgetfulness | Elsa Kim</a></li>
+                    <li><a href="20.html">AP #20 All of Life Rally | Kill or Be Killed | Alan Yu</a></li>
+                    <li><a href="21.html">AP #21 Leaders Life | How to Lament | Sea Choi</a></li>
+                    <li><a href="22.html">AP #22 Communal Life | How to Identify Idols | Sam Collins</a></li>
+                    <li><a href="23.html">AP #23 Leaders Life | Accept, Reject, Redeem | Narnia</a></li>
+                    <li><a href="24.html">AP #24 Missional Life | title | Pastor Joel Yoon</a></li>
+                    <li><a href="25.html">AP #25 Communal Life | title | Pastor Joel Yoon</a></li>
+                    <li><a href="26.html">AP #26 Missional Life | Vision/Values of CO | Sam Collins</a></li>
+                    <li><a href="27.html">AP #27 Leaders Life | AP Debrief | Alan Yu</a></li>
+                    <li><a href="28.html">AP #28 All of Life Rally | TBD | Nate Lightle</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
